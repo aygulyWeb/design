@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fonts/css/all.min.css" />
+    <link rel="stylesheet" href="libs/slick/css/slick.css" />
+    <title>Design Interior</title>
+  </head>
+
+  <body>
+    <header id="header" class="main-wrapper">
+      <!-- <div class="main-screen__bg">
+			<img class="main-screen__image" src="images/main-screen-image.webp" alt="#">
+		</div> -->
+
+      <div class="container">
+        <section class="main-screen">
+          <div class="main-screen__logo">
+            <img
+              class="main-screen__pic"
+              src="images/main-screen-logo.webp"
+              alt=""
+            />
+          </div>
+          <div class="main-screen__menu">
+            <input id="main-screen__toggle" type="checkbox" />
+            <label class="main-screen__burger" for="main-screen__toggle">
+              <span></span>
+            </label>
+            <ul class="main-screen__box">
+              <li><a class="main-screen__item" href="#">Главная</a></li>
+              <li><a class="main-screen__item" href="#">преимущества</a></li>
+              <li><a class="main-screen__item" href="#">портфолио</a></li>
+              <li><a class="main-screen__item" href="#">наши услуги</a></li>
+              <li><a class="main-screen__item" href="#">услуги</a></li>
+              <li><a class="main-screen__item" href="#">контакты</a></li>
+              <li>
+                <a href="https://www.vk.com/" class="main-screen__link">
+                  <i class="fab fa-vk"></i>
+                </a>
+                <a href="https://www.facebook.com/" class="main-screen__link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/" class="main-screen__link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-screen__dubblelogo">
+            <div class="main-screen__image-icon">
+              <img src="images/desctop-icon-1.webp" alt="#" />
+            </div>
+            <div class="main-screen__image-icon">
+              <img src="images/desctop-icon-2.webp" alt="#" />
+            </div>
+          </div>
+          <div class="main-screen__contact">
+            <i class="fas fa-phone-alt"></i>
+            <a class="main-screen__phone" href="tel:+7(800)823 48 44">
+              - 7 (800) 823 48 44</a
+            >
+          </div>
+        </section>
+        <section class="main-screen__design">
+          <div class="main-screen__title">
+            <p class="main-screen__heading">дизайн интерьеров</p>
+          </div>
+          <div class="main-screen__text">
+            Воплотим в жизнь интерьер, который будет радовать лаконичностью и
+            уютом.
+          </div>
+          <div class="main-screen__button">
+            <a class="main-screen__btn" href="#popup">заказать дизайн</a>
+            <i class="fas fa-long-arrow-alt-down"></i>
+          </div>
+          <div class="main-screen__arrow">
+            <i class="fas fa-long-arrow-alt-down"></i>
+          </div>
+          <!-- <div class="main-screen__socials">
+					<a href="https://www.vk.com/" class="main-screen__link">
+						<i class="fab fa-vk"></i>
+					</a>
+					<a href="https://www.facebook.com/" class="main-screen__link">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+					<a href="https://www.instagram.com/" class="main-screen__link">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</div> -->
+        </section>
+        <section class="main-screen__sliders">
+          <div class="main-screen__items">
+            <img
+              class="main-screen__sliders-image"
+              src="images/main-screen-image.webp"
+              alt="#"
+            />
+          </div>
+          <div class="main-screen__items">
+            <img
+              class="main-screen__sliders-image"
+              src="images/main-screen-image.webp"
+              alt="#"
+            />
+          </div>
+          <div class="main-screen__items">
+            <img
+              class="main-screen__sliders-image"
+              src="images/main-screen-image.webp"
+              alt="#"
+            />
+          </div>
+          <div class="main-screen__items">
+            <img
+              class="main-screen__sliders-image"
+              src="images/main-screen-image.webp"
+              alt="#"
+            />
+          </div>
+        </section>
+        <section class="main-screen__socials">
+          <a href="https://www.vk.com/" class="main-screen__link">
+            <i class="fab fa-vk"></i>
+          </a>
+          <a href="https://www.facebook.com/" class="main-screen__link">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/" class="main-screen__link">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </section>
+      </div>
+    </header>
+
+    <div id="popup" class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <a href="#header" class="popup__close">
+            <i class="fas fa-times"></i>
+          </a>
+          <div class="popup__title">Выбрать дизайн</div>
+          <form action="#" class="popup__form">
+            <div class="popup__choice">
+              <input type="checkbox" id="choice1" />
+              <label for="choice1">классический дизайн</label>
+            </div>
+            <div class="popup__choice">
+              <input type="checkbox" id="choice2" />
+              <label for="choice2">современный дизайн</label>
+            </div>
+            <div class="popup__title">оформить заказ</div>
+            <div class="popup__login">
+              <label for="#">email</label>
+              <input type="text" placeholder="Email" />
+            </div>
+            <div class="popup__password">
+              <label for="#">password</label>
+              <input type="password" placeholder="Passwords" />
+            </div>
+            <div class="popup__button">
+              <button>подтвердить заказ</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <main class="main">
+      <section class="features">
+        <div class="container">
+          <div class="features__massonry">
+            <div class="flex5">
+              <div class="features__item flex1">
+                <div class="features__number">01</div>
+                <div class="features__title">Берем весь ремонт на себя</div>
+                <div class="features__text">
+                  Заботы по дизайну и отделке помещения возьмем на себя,
+                  останется дождаться завершения работ и наслаждаться
+                  результатом
+                </div>
+              </div>
+              <div class="features__item flex2">
+                <div class="features__number">02</div>
+                <div class="features__title">
+                  Мы - проффесионалы своего дела
+                </div>
+                <div class="features__text">
+                  Наши дизайнеры постоянно повышают квалификацию, посещеют курсы
+                  и тренинги а студия уже реализовала свыше 1000 дизайн-проектов
+                </div>
+              </div>
+            </div>
+            <!-- <div class="features__item flex1">
+						<div class="features__number">01</div>
+						<div class="features__title">Берем весь ремонт на себя</div>
+						<div class="features__text">Заботы по дизайну и отделке помещения возьмем на себя, останется
+							дождаться завершения работ и наслаждаться результатом</div>
+					</div>
+					<div class="features__item flex2">
+						<div class="features__number">02</div>
+						<div class="features__title">Мы - проффесионалы своего дела</div>
+						<div class="features__text">Наши дизайнеры постоянно повышают квалификацию, посещеют курсы и
+							тренинги а студия уже реализовала свыше 1000 дизайн-проектов</div>
+					</div> -->
+            <div class="flex6">
+              <div class="features__item flex3">
+                <div class="features__number">03</div>
+                <div class="features__title">Наши проекты индивидуальны</div>
+                <div class="features__text">
+                  Каждый, созданный студией, интерьер - индивидуальное и
+                  максимально продуманное решение для каждого вида помещения
+                </div>
+              </div>
+              <div class="features__item flex4">
+                <div class="features__number">04</div>
+                <div class="features__title">Работаем на выгодных условиях</div>
+                <div class="features__text">
+                  Ценовая политика студии очень лояльна, мы осуществляем
+                  контроль всего процесса работы и получаем результат который
+                  делает клиентов счастивыми
+                </div>
+              </div>
+            </div>
+            <!-- <div class="features__item flex3">
+						<div class="features__number">03</div>
+						<div class="features__title">Наши проекты индивидуальны</div>
+						<div class="features__text">Каждый, созданный студией, интерьер - индивидуальное и максимально
+							продуманное решение для каждого вида помещения</div>
+					</div>
+					<div class="features__item flex4">
+						<div class="features__number">04</div>
+						<div class="features__title">Работаем на выгодных условиях</div>
+						<div class="features__text">Ценовая политика студии очень лояльна, мы осуществляем контроль
+							всего процесса работы и получаем результат который делает клиентов счастивыми</div>
+					</div> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio">
+        <div class="container">
+          <div class="portfolio__title">портфолио</div>
+          <div class="tabs">
+            <div class="tabs-triggers">
+              <a href="#tab-1" class="tabs-triggers__item">Все проекты</a>
+              <a href="#tab-2" class="tabs-triggers__item">Дизайн интерьеров</a>
+              <a href="#tab-3" class="tabs-triggers__item">Отделочные работы</a>
+            </div>
+            <div class="tabs-content">
+              <div id="tab-1" class="tabs-content__item">
+                <div class="tabs-content__block">
+                  <div class="accordion-item">
+                    <input type="radio" id="num1" name="design" />
+                    <label for="num1" class="accordion-item__trigger">
+                      <div class="accordion__image">
+                        <div class="accordion__picture">
+                          <img src="images/portfolio-image-1.webp" alt="#" />
+                        </div>
+                        <div class="tabs-content__title">
+                          дизайн интерьера гостинной
+                        </div>
+                        <a class="tabs-content__icon" href="#"
+                          ><i class="fas fa-plus-circle"></i
+                        ></a>
+                        <div class="tabs-content__text">дизайн интерьера</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="accordion-item">
+                    <input type="radio" id="num2" name="design" />
+                    <label for="num2" class="accordion-item__trigger">
+                      <div class="accordion__image">
+                        <div class="accordion__picture">
+                          <img src="images/portfolio-image-2.webp" alt="#" />
+                        </div>
+                        <div class="tabs-content__title">
+                          дизайн интерьера гостинной
+                        </div>
+                        <a class="tabs-content__icon" href="#"
+                          ><i class="fas fa-plus-circle"></i
+                        ></a>
+                        <div class="tabs-content__text">дизайн интерьера</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="accordion-item">
+                    <input type="radio" id="num3" name="design" />
+                    <label for="num3" class="accordion-item__trigger">
+                      <div class="accordion__image">
+                        <div class="accordion__picture">
+                          <img src="images/portfolio-image-3.webp" alt="#" />
+                        </div>
+                        <div class="tabs-content__title">
+                          дизайн интерьера гостинной
+                        </div>
+                        <a class="tabs-content__icon" href="#"
+                          ><i class="fas fa-plus-circle"></i
+                        ></a>
+                        <div class="tabs-content__text">дизайн интерьера</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="accordion-item">
+                    <input type="radio" id="num4" name="design" />
+                    <label for="num4" class="accordion-item__trigger">
+                      <div class="accordion__image">
+                        <div class="accordion__picture">
+                          <img src="images/portfolio-image-4.webp" alt="#" />
+                        </div>
+                        <div class="tabs-content__title">
+                          дизайн интерьера гостинной
+                        </div>
+                        <a class="tabs-content__icon" href="#"
+                          ><i class="fas fa-plus-circle"></i
+                        ></a>
+                        <div class="tabs-content__text">дизайн интерьера</div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div id="tab-2" class="tabs-content__item">
+                <div class="tabs-content__block">
+                  <div class="accordion-item">
+                    <input type="radio" id="num5" name="design" />
+                    <label for="num5" class="accordion-item__trigger">
+                      <div class="accordion__image">
+                        <div class="accordion__picture">
+                          <img src="images/portfolio-image-1.webp" alt="#" />
+                        </div>
+                        <div class="tabs-content__title">
+                          дизайн интерьера гостинной
+                        </div>
+                        <a class="tabs-content__icon" href="#"
+                          ><i class="fas fa-plus-circle"></i
+                        ></a>
+                        <div class="tabs-content__text">дизайн интерьера</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="accordion-item">
+                    <input type="radio" id="num6" name="design" />
+                    <label for="num6" class="accordion-item__trigger">
+                      <div class="accordion__image">
+                        <div class="accordion__picture">
+                          <img src="images/portfolio-image-2.webp" alt="#" />
+                        </div>
+                        <div class="tabs-content__title">
+                          дизайн интерьера гостинной
+                        </div>
+                        <a class="tabs-content__icon" href="#"
+                          ><i class="fas fa-plus-circle"></i
+                        ></a>
+                        <div class="tabs-content__text">дизайн интерьера</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="accordion-item">
+                    <input type="radio" id="num7" name="design" />
+                    <label for="num7" class="accordion-item__trigger">
+                      <div class="accordion__image">
+                        <div class="accordion__picture">
+                          <img src="images/portfolio-image-3.webp" alt="#" />
+                        </div>
+                        <div class="tabs-content__title">
+                          дизайн интерьера гостинной
+                        </div>
+                        <a class="tabs-content__icon" href="#"
+                          ><i class="fas fa-plus-circle"></i
+                        ></a>
+                        <div class="tabs-content__text">дизайн интерьера</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="accordion-item">
+                    <input type="radio" id="num8" name="design" />
+                    <label for="num8" class="accordion-item__trigger">
+                      <div class="accordion__image">
+                        <div class="accordion__picture">
+                          <img src="images/portfolio-image-4.webp" alt="#" />
+                        </div>
+                        <div class="tabs-content__title">
+                          дизайн интерьера гостинной
+                        </div>
+                        <a class="tabs-content__icon" href="#"
+                          ><i class="fas fa-plus-circle"></i
+                        ></a>
+                        <div class="tabs-content__text">дизайн интерьера</div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div id="tab-3" class="tabs-content__item">
+                <div class="tabs-content__block">
+                  <div class="accordion-item">
+                    <input type="radio" id="num9" name="design" />
+                    <label for="num9" class="accordion-item__trigger">
+                      <div class="accordion__image">
+                        <div class="accordion__picture">
+                          <img src="images/portfolio-image-1.webp" alt="#" />
+                        </div>
+                        <div class="tabs-content__title">
+                          дизайн интерьера гостинной
+                        </div>
+                        <a class="tabs-content__icon" href="#"
+                          ><i class="fas fa-plus-circle"></i
+                        ></a>
+                        <div class="tabs-content__text">дизайн интерьера</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="accordion-item">
+                    <input type="radio" id="num10" name="design" />
+                    <label for="num10" class="accordion-item__trigger">
+                      <div class="accordion__image">
+                        <div class="accordion__picture">
+                          <img src="images/portfolio-image-2.webp" alt="#" />
+                        </div>
+                        <div class="tabs-content__title">
+                          дизайн интерьера гостинной
+                        </div>
+                        <a class="tabs-content__icon" href="#"
+                          ><i class="fas fa-plus-circle"></i
+                        ></a>
+                        <div class="tabs-content__text">дизайн интерьера</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="accordion-item">
+                    <input type="radio" id="num11" name="design" />
+                    <label for="num11" class="accordion-item__trigger">
+                      <div class="accordion__image">
+                        <div class="accordion__picture">
+                          <img src="images/portfolio-image-3.webp" alt="#" />
+                        </div>
+                        <div class="tabs-content__title">
+                          дизайн интерьера гостинной
+                        </div>
+                        <a class="tabs-content__icon" href="#"
+                          ><i class="fas fa-plus-circle"></i
+                        ></a>
+                        <div class="tabs-content__text">дизайн интерьера</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="accordion-item">
+                    <input type="radio" id="num12" name="design" />
+                    <label for="num12" class="accordion-item__trigger">
+                      <div class="accordion__image">
+                        <div class="accordion__picture">
+                          <img src="images/portfolio-image-4.webp" alt="#" />
+                        </div>
+                        <div class="tabs-content__title">
+                          дизайн интерьера гостинной
+                        </div>
+                        <a class="tabs-content__icon" href="#"
+                          ><i class="fas fa-plus-circle"></i
+                        ></a>
+                        <div class="tabs-content__text">дизайн интерьера</div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="uslugi">
+          <div class="uslugi__heading">наши услуги</div>
+          <div class="uslugi-tabs">
+            <div class="uslugi-tabs__triggers">
+              <a href="#tabs-1" class="uslugi-tabs__triggers-item"
+                >Дизайн жилого помещения</a
+              >
+              <a href="#tabs-2" class="uslugi-tabs__triggers-item"
+                >Отдельных комнат</a
+              >
+              <a href="#tabs-3" class="uslugi-tabs__triggers-item"
+                >Дизайн коммерчнских обьектов</a
+              >
+              <a href="#tabs-4" class="uslugi-tabs__triggers-item"
+                >Ремонт под ключ</a
+              >
+              <a href="#tabs-5" class="uslugi-tabs__triggers-item"
+                >Отделочные работы</a
+              >
+              <a href="#tabs-6" class="uslugi-tabs__triggers-item"
+                >Выезд дизайнера на домы</a
+              >
+            </div>
+            <div class="uslugi-tabs__content">
+              <div id="tabs-1" class="uslugi-tabs__content-item">
+                <div class="uslugi__image">
+                  <img src="images/uslugi-block-image.webp" alt="#" />
+                </div>
+                <div class="uslugi__text-block">
+                  <div class="uslugi__article">
+                    <div class="uslugi__title">дизайн жилого помешения</div>
+                    <div class="uslugi__text">
+                      Работая с коммерческими объектами, студия изучает целевую
+                      аудиторию, создаем коммерческие интерьеры такими, чтобы
+                      посетители кафе, бара, гостиницы хотели возвращаться в
+                      интерьер снова и снова
+                    </div>
+                  </div>
+                  <div class="uslugi__number">532 проекта</div>
+                </div>
+                <div class="uslugi__button">
+                  <a href="#" class="uslugi__btn">консультация</a>
+                </div>
+              </div>
+              <div id="tabs-2" class="uslugi-tabs__content-item">
+                <div class="uslugi__image">
+                  <img src="images/main-screen-image.webp" alt="#" />
+                </div>
+                <div class="uslugi__text-block">
+                  <div class="uslugi__article">
+                    <div class="uslugi__title">дизайн жилого помешения</div>
+                    <div class="uslugi__text">
+                      Работая с коммерческими объектами, студия изучает целевую
+                      аудиторию, создаем коммерческие интерьеры такими, чтобы
+                      посетители кафе, бара, гостиницы хотели возвращаться в
+                      интерьер снова и снова
+                    </div>
+                  </div>
+                  <div class="uslugi__number">532 проекта</div>
+                </div>
+                <div class="uslugi__button">
+                  <a href="#" class="uslugi__btn">консультация</a>
+                </div>
+              </div>
+              <div id="tabs-3" class="uslugi-tabs__content-item">
+                <div class="uslugi__image">
+                  <img src="images/uslugi-block-image.webp" alt="#" />
+                </div>
+                <div class="uslugi__text-block">
+                  <div class="uslugi__article">
+                    <div class="uslugi__title">дизайн жилого помешения</div>
+                    <div class="uslugi__text">
+                      Работая с коммерческими объектами, студия изучает целевую
+                      аудиторию, создаем коммерческие интерьеры такими, чтобы
+                      посетители кафе, бара, гостиницы хотели возвращаться в
+                      интерьер снова и снова
+                    </div>
+                  </div>
+                  <div class="uslugi__number">532 проекта</div>
+                </div>
+                <div class="uslugi__button">
+                  <a href="#" class="uslugi__btn">консультация</a>
+                </div>
+              </div>
+              <div id="tabs-4" class="uslugi-tabs__content-item">
+                <div class="uslugi__image">
+                  <img src="images/main-screen-image.webp" alt="#" />
+                </div>
+                <div class="uslugi__text-block">
+                  <div class="uslugi__article">
+                    <div class="uslugi__title">дизайн жилого помешения</div>
+                    <div class="uslugi__text">
+                      Работая с коммерческими объектами, студия изучает целевую
+                      аудиторию, создаем коммерческие интерьеры такими, чтобы
+                      посетители кафе, бара, гостиницы хотели возвращаться в
+                      интерьер снова и снова
+                    </div>
+                  </div>
+                  <div class="uslugi__number">532 проекта</div>
+                </div>
+                <div class="uslugi__button">
+                  <a href="#" class="uslugi__btn">консультация</a>
+                </div>
+              </div>
+              <div id="tabs-5" class="uslugi-tabs__content-item">
+                <div class="uslugi__image">
+                  <img src="images/uslugi-block-image.webp" alt="#" />
+                </div>
+                <div class="uslugi__text-block">
+                  <div class="uslugi__article">
+                    <div class="uslugi__title">дизайн жилого помешения</div>
+                    <div class="uslugi__text">
+                      Работая с коммерческими объектами, студия изучает целевую
+                      аудиторию, создаем коммерческие интерьеры такими, чтобы
+                      посетители кафе, бара, гостиницы хотели возвращаться в
+                      интерьер снова и снова
+                    </div>
+                  </div>
+                  <div class="uslugi__number">532 проекта</div>
+                </div>
+                <div class="uslugi__button">
+                  <a href="#" class="uslugi__btn">консультация</a>
+                </div>
+              </div>
+              <div id="tabs-6" class="uslugi-tabs__content-item">
+                <div class="uslugi__image">
+                  <img src="images/main-screen-image.webp" alt="#" />
+                </div>
+                <div class="uslugi__text-block">
+                  <div class="uslugi__article">
+                    <div class="uslugi__title">дизайн жилого помешения</div>
+                    <div class="uslugi__text">
+                      Работая с коммерческими объектами, студия изучает целевую
+                      аудиторию, создаем коммерческие интерьеры такими, чтобы
+                      посетители кафе, бара, гостиницы хотели возвращаться в
+                      интерьер снова и снова
+                    </div>
+                  </div>
+                  <div class="uslugi__number">532 проекта</div>
+                </div>
+                <div class="uslugi__button">
+                  <a href="#" class="uslugi__btn">консультация</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap-video">
+        <div class="video">
+          <video
+            controls
+            muted
+            poster="images/video-block-image.webp"
+            class="video__item"
+          >
+            <source src="video/design-interier.webm" type="video/webm" />
+            <source src="video/design-interier.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="video__content">
+          <div class="video__icon"><i class="fas fa-play"></i></div>
+          <div class="video__text">
+            О студии дизайна интерьеров BRUME за 2 минуты
+          </div>
+        </div>
+      </section>
+
+      <section class="etapy">
+        <div class="container">
+          <div class="etapy__heading">Этапы работы</div>
+          <div class="etapy__content">
+            <div class="etapy__item">
+              <div class="etapy__number">
+                <span>1</span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="etapy__text">
+                <div class="etapy__title">консультация</div>
+                <div class="etapy__subtitle">
+                  Обсуждаем задачи и пожелания, предлагаем варианты дизайна
+                  интерьера, оговариваем сроки реализации.
+                </div>
+              </div>
+            </div>
+            <div class="etapy__item">
+              <div class="etapy__number">
+                <span>2</span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="etapy__text">
+                <div class="etapy__title">техническое задание</div>
+                <div class="etapy__subtitle">
+                  Составляем техническое задание. Заключаем договор, в котором
+                  прописываем все этапы проекта.
+                </div>
+              </div>
+            </div>
+            <div class="etapy__item">
+              <div class="etapy__number">
+                <span>3</span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="etapy__text">
+                <div class="etapy__title">замеры и планировка</div>
+                <div class="etapy__subtitle">
+                  Фиксируем размеры стен, окон, плинтусов, дверных проемов для
+                  эффективной работы.
+                </div>
+              </div>
+            </div>
+            <div class="etapy__item">
+              <div class="etapy__number">
+                <span>4</span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="etapy__text">
+                <div class="etapy__title">дизайн-концепция</div>
+                <div class="etapy__subtitle">
+                  Создаем концепцию на основе пожеланий клиента, его образов и
+                  ощущений. подбираем мебель.
+                </div>
+              </div>
+            </div>
+            <div class="etapy__item">
+              <div class="etapy__number">
+                <span>5</span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="etapy__text">
+                <div class="etapy__title">3D визуализация</div>
+                <div class="etapy__subtitle">
+                  Создаем 3d визуализацию, собираем пакет чертежей
+                  соответствующий строительным нормам...
+                </div>
+              </div>
+            </div>
+            <div class="etapy__item">
+              <div class="etapy__number">
+                <span>6</span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="etapy__text">
+                <div class="etapy__title">комплектация интерьера</div>
+                <div class="etapy__subtitle">
+                  Подбираем мебель, отделочные материалы, светильники и
+                  текстиль. Декорируем интерьер.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="form">
+        <div class="form__content">
+          <div class="form__image">
+            <img src="images/form-image.webp" alt="#" />
+          </div>
+          <div class="form__reg">
+            <div class="form__title">мечтаете об интерьере от brume?</div>
+            <div class="form__subtitle">
+              Оставьте контактные данные, менеджер свяжется с вами в течении 15
+              минут, для уточнения всех деталей.
+            </div>
+            <div class="form__registration">
+              <div class="form__users">
+                <input class="form__input" type="text" placeholder="Имя*" />
+                <i class="far fa-user"></i>
+              </div>
+              <div class="form__users">
+                <input class="form__input" type="tel" placeholder="Телефон*" />
+                <i class="fas fa-phone-volume"></i>
+              </div>
+              <div class="form__users">
+                <input class="form__input" type="email" placeholder="E-mail*" />
+                <i class="far fa-envelope"></i>
+              </div>
+              <input class="form__button" type="submit" value="Отправить" />
+              <p class="form__btn">
+                Нажимая на кнопку, вы соглашаетесь с условиями обработки
+                персональных данных
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="form__image2">
+          <img src="images/form-image.webp" alt="#" />
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <div class="testimonials__heading">отзывы наших клиентов</div>
+        <div class="testimonials__sliders">
+          <div class="testimonials__item">
+            <div class="prev-img">
+              <img class="prevbtnimg" src="images/testimonials-3.webp" />
+            </div>
+            <div class="next-img">
+              <img class="nextbtnimg" src="images/testimonials-2.webp" />
+            </div>
+            <div class="testimonials__image">
+              <img src="images/testimonials-1.webp" alt="#" />
+            </div>
+            <div class="testimonials__block">
+              <div class="testimonials__title">александра холодная</div>
+              <div class="testimonials__subtitle">услуга интерьер детской</div>
+              <div class="testimonials__text">
+                Спасибо студии за замечательный интерьер для моей 4-х летней
+                дочки! Работа прошла быстро и легко, команда выполнила все точно
+                в срок, сделали все как мы и хотели. В следующий раз обратимся к
+                BRUME!
+              </div>
+            </div>
+          </div>
+          <div class="testimonials__item">
+            <div class="prev-img">
+              <img class="prevbtnimg" src="images/testimonials-3.webp" />
+            </div>
+            <div class="next-img">
+              <img class="nextbtnimg" src="images/testimonials-1.webp" />
+            </div>
+            <div class="testimonials__image">
+              <img src="images/testimonials-2.webp" alt="#" />
+            </div>
+            <div class="testimonials__block">
+              <div class="testimonials__title">александра холодная</div>
+              <div class="testimonials__subtitle">услуга интерьер детской</div>
+              <div class="testimonials__text">
+                Спасибо студии за замечательный интерьер для моей 4-х летней
+                дочки! Работа прошла быстро и легко, команда выполнила все точно
+                в срок, сделали все как мы и хотели. В следующий раз обратимся к
+                BRUME!
+              </div>
+            </div>
+          </div>
+          <div class="testimonials__item">
+            <div class="prev-img">
+              <img class="prevbtnimg" src="images/testimonials-1.webp" />
+            </div>
+            <div class="next-img">
+              <img class="nextbtnimg" src="images/testimonials-2.webp" />
+            </div>
+            <div class="testimonials__image">
+              <img src="images/testimonials-3.webp" alt="#" />
+            </div>
+            <div class="testimonials__block">
+              <div class="testimonials__title">александра холодная</div>
+              <div class="testimonials__subtitle">услуга интерьер детской</div>
+              <div class="testimonials__text">
+                Спасибо студии за замечательный интерьер для моей 4-х летней
+                дочки! Работа прошла быстро и легко, команда выполнила все точно
+                в срок, сделали все как мы и хотели. В следующий раз обратимся к
+                BRUME!
+              </div>
+            </div>
+          </div>
+          <div class="testimonials__item">
+            <div class="prev-img">
+              <img class="prevbtnimg" src="images/testimonials-1.webp" />
+            </div>
+            <div class="next-img">
+              <img class="nextbtnimg" src="images/testimonials-3.webp" />
+            </div>
+            <div class="testimonials__image">
+              <img src="images/testimonials-1.webp" alt="#" />
+            </div>
+            <div class="testimonials__block">
+              <div class="testimonials__title">александра холодная</div>
+              <div class="testimonials__subtitle">услуга интерьер детской</div>
+              <div class="testimonials__text">
+                Спасибо студии за замечательный интерьер для моей 4-х летней
+                дочки! Работа прошла быстро и легко, команда выполнила все точно
+                в срок, сделали все как мы и хотели. В следующий раз обратимся к
+                BRUME!
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wrap-footer">
+      <div class="container">
+        <div class="footer">
+          <div class="footer__item">
+            <div class="footer__logo">
+              <img src="images/main-screen-logo.webp" alt="" />
+            </div>
+            <div class="footer__socials">
+              <a href="https://www.vk.com/" class="footer__link">
+                <i class="fab fa-vk"></i>
+              </a>
+              <a href="https://www.facebook.com/" class="footer__link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/" class="footer__link">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer__item">
+            <div class="footer__copr">brume interior, 2017 &copy</div>
+          </div>
+          <div class="footer__item">
+            <div class="footer__author">holodnaya design</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="libs/slick/js/jquery-3.3.1.js"></script>
+    <script src="libs/slick/js/jquery-migrate-3.1.0.js"></script>
+    <script src="libs/slick/js/slick.min.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

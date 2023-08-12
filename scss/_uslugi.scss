@@ -1,0 +1,218 @@
+@import "_variables";
+@import "_fonts";
+@import "_mixins";
+
+.uslugi {
+	padding-top: 99px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	&__heading {
+		@include aboutBlockfonts(45px, $uslugiHeadingfont, $uslugiHeadingcolor, none, center);
+	}
+
+	&-tabs {
+		&__triggers {
+			transition: 0.5s linear;
+			// display: flex;
+			// flex-direction: column;
+			// justify-content: center;
+			// padding-top: 40px;
+			&-item {
+				transition: 0.5s linear;
+				line-height: 2.5;
+				cursor: pointer;
+				@include blockFontsfont(22px, $uslugiListfont, $uslugiListcolor, none);
+			}
+		}
+		&__content-item {
+			display: none;
+		}
+		&__triggers-item--active {
+			color: #000;
+			font-weight: 900;
+		}
+
+		&__content-item--active {
+			display: block;
+		}
+	}
+
+	&__title {
+		display: none;
+	}
+	&__number {
+		visibility: hidden;
+		opacity: 0;
+	}
+	&__text {
+		padding-top: 34px;
+		line-height: 1.1;
+		@include blockFontsfont(20px, $uslugiListfont, $uslugiListcolor, none);
+	}
+	&__button {
+		margin-top: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 217px;
+		min-height: 56px;
+		border: 2px solid;
+		color: $uslugiHeadingcolor;
+		@include blockFontsfont(15px, $uslugiBtnfont, $uslugiHeadingcolor, uppercase);
+	}
+	img {
+		width: 100%;
+		height: 100vh;
+		object-fit: cover;
+	}
+}
+
+@media (min-width: 320px) {
+	.uslugi {
+		&-tabs {
+			&__triggers {
+				padding-top: 40px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.uslugi {
+		padding-top: 170px;
+		padding-left: 20px;
+		padding-right: 20px;
+		&__heading {
+			text-align: left;
+		}
+		&-tabs {
+			min-height: 605px;
+			&__triggers {
+				padding-top: 0;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+
+				&-item {
+					line-height: 4;
+					flex: 1 0 50%;
+				}
+			}
+		}
+
+		&__text-block {
+			display: flex;
+			justify-content: space-between;
+		}
+		&__article {
+			max-width: 490px;
+		}
+		&__title {
+			padding-top: 63px;
+			display: block;
+			@include blockFontsfont(30px, $uslugiTitlefont, $uslugiHeadingcolor, capitalize);
+		}
+		&__text {
+			padding-top: 20px;
+		}
+
+		&__number {
+			padding-top: 71px;
+			visibility: visible;
+			opacity: 1;
+			@include blockFontsfont(22px, $uslugiNumfonts, $uslugiHeadingcolor, capitalize);
+		}
+		&__button {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+		}
+		&__btn {
+			width: 340px;
+			font-size: 18px;
+		}
+	}
+}
+@media (min-width: 991px) {
+	.uslugi {
+		padding-top: 136px;
+
+		&-tabs {
+			padding-top: 65px;
+			display: flex;
+			justify-content: space-between;
+			&__triggers {
+				flex-basis: 145px;
+				padding-top: 0;
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				&-item {
+					line-height: 1;
+					font-size: 18px;
+					flex: 1 0 15%;
+				}
+				&-item--active {
+					transform: translateX(50px);
+				}
+			}
+			&__content {
+				&-item {
+					flex: 1 0 65%;
+				}
+			}
+		}
+
+		&__image {
+			width: 878px;
+			height: 390px;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		&__text-block {
+			display: flex;
+			justify-content: space-between;
+		}
+		&__article {
+			max-width: 490px;
+		}
+		&__title {
+			padding-top: 63px;
+			display: block;
+			@include blockFontsfont(30px, $uslugiTitlefont, $uslugiHeadingcolor, capitalize);
+		}
+		&__text {
+			padding-top: 20px;
+			line-height: 1.5;
+		}
+
+		&__number {
+			padding-top: 71px;
+			visibility: visible;
+			opacity: 1;
+			@include blockFontsfont(22px, $uslugiNumfonts, $uslugiHeadingcolor, capitalize);
+		}
+		&__button {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			margin-top: 0;
+		}
+		&__btn {
+			width: 217px;
+			font-size: 15px;
+		}
+	}
+}

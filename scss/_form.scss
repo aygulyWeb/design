@@ -1,0 +1,212 @@
+@import "_variables";
+@import "_fonts";
+@import "_mixins";
+
+.form {
+	padding-top: 120px;
+
+	&__content {
+		position: relative;
+	}
+
+	&__image {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		&:before {
+			content: "";
+			width: 100%;
+			height: 100vh;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: rgba(34, 52, 66, 0.8);
+		}
+		img {
+			width: 100%;
+			height: 100vh;
+			object-fit: cover;
+		}
+	}
+	&__reg {
+		position: absolute;
+		top: 5%;
+		left: 5%;
+		right: 5%;
+		// transform: translate(-10%, -10%);
+	}
+	&__title {
+		@include aboutBlockfonts(45px, $formTitlefont, $universalColorwhite, capitalize, center);
+	}
+	&__subtitle {
+		padding-top: 15px;
+		@include aboutBlockfonts(18px, $formSubfont, $universalColorwhite, none, center);
+	}
+	&__registration {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	&__users {
+		padding-top: 30px;
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 120%;
+			left: 0;
+			width: 290px;
+			border-bottom: 2px solid $formLinecolor;
+		}
+		i {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+	&__input {
+		outline: none;
+		border: none;
+		background: transparent;
+	}
+	input[placeholder] {
+		padding-left: 5px;
+		@include blockFontsfont(18px, $formPlacefont, $fontPlacecolor, capitalize);
+	}
+	&__button {
+		cursor: pointer;
+		outline: none;
+		border: none;
+		margin-top: 20px;
+		max-width: 286px;
+		min-height: 70px;
+		border-radius: 8px;
+		background-color: $fontButtoncolor;
+		@include blockFontsfont(18px, $formButtonfont, $universalColorwhite, capitalize);
+	}
+	&__btn {
+		margin-top: 10px;
+		text-align: center;
+		@include blockFontsfont(16px, $formPlacefont, $universalColorwhite, none);
+	}
+	&__image2 {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.form {
+		&__registration {
+			justify-content: center;
+			max-width: 470px;
+		}
+		&__reg {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			right: 0;
+			transform: translate(-50%, -50%);
+		}
+		&__users {
+			padding-top: 40px;
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+			&:before {
+				width: 470px;
+			}
+			i {
+				opacity: 1;
+				visibility: visible;
+				color: $fontPlacecolor;
+			}
+		}
+		.fa-phone-volume {
+			transform: rotate(-45deg);
+		}
+
+		&__button {
+			margin-top: 20px;
+			max-width: 470px;
+		}
+	}
+}
+@media (min-width: 991px) {
+	.form {
+		display: flex;
+		&__content {
+			flex: 1 0 50%;
+			position: relative;
+			&:before {
+				content: "";
+				width: 100%;
+				height: 100vh;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: $formContentcolor;
+			}
+		}
+		&__image {
+			opacity: 0;
+			visibility: hidden;
+		}
+		&__reg {
+			width: 490px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			right: 0;
+			transform: translate(-50%, -50%);
+		}
+		&__registration {
+			max-width: 490px;
+		}
+		&__users {
+			padding-top: 44px;
+			display: flex;
+			position: relative;
+			&:before {
+				width: 490px;
+			}
+			i {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+
+		&__input {
+			max-width: 490px;
+		}
+		&__title {
+			text-align: left;
+		}
+		&__subtitle {
+			text-align: left;
+			line-height: 1.5;
+			padding-top: 30px;
+		}
+		&__btn {
+			padding-top: 25px;
+			text-align: left;
+		}
+		&__image2 {
+			display: block;
+			flex: 1 0 50%;
+			img {
+				width: 100%;
+				height: 100vh;
+			}
+		}
+		// &__reg {
+		// }
+		&__button {
+			margin-top: 46px;
+			max-width: 490px;
+			border: 2px solid #fff;
+			background-color: $formContentcolor;
+			&:hover {
+				background-color: $fontButtoncolor;
+			}
+		}
+	}
+}

@@ -1,0 +1,219 @@
+@import "_variables";
+@import "_fonts";
+@import "_mixins";
+
+.portfolio {
+	padding-top: 86px;
+
+	&__title {
+		@include blockFontsfont(45px, $portfolioTitlefont, $portfolioTitlecolor, capitalize);
+		text-align: center;
+	}
+	.tabs {
+		padding-top: 45px;
+		display: block;
+
+		&-triggers {
+			padding-left: 15px;
+			padding-right: 15px;
+			transition: 0.5s linear;
+			&__item {
+				@include blockFontsfont(22px, $portfolioTextfonts, $portfolioTextcolor, none);
+				transition: 0.3s linear;
+			}
+		}
+		&-content {
+			padding-top: 40px;
+
+			&__item {
+				display: none;
+			}
+		}
+
+		// .accordion__image {
+		// 	overflow: hidden;
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	transition: 0.5s linear;
+		// }
+		img {
+			display: block;
+			width: 100%;
+			height: 100vh;
+			object-fit: cover;
+		}
+		.accordion-item__trigger {
+			cursor: pointer;
+		}
+
+		input {
+			display: none;
+		}
+		input:checked ~ .accordion-item__trigger .tabs-content__icon {
+			visibility: visible;
+			opacity: 1;
+		}
+		input:checked ~ .accordion-item__trigger .tabs-content__text {
+			visibility: hidden;
+			opacity: 0;
+		}
+		input:checked ~ .accordion-item:before {
+			visibility: hidden;
+			opacity: 0;
+		}
+		input:checked ~ .accordion-item__trigger .accordion__image:before {
+			visibility: hidden;
+			opacity: 0;
+		}
+		input:checked ~ .accordion-item__trigger .accordion__picture:before {
+			visibility: hidden;
+			opacity: 0;
+		}
+
+		.tabs-triggers__item--active {
+			color: $portfolioTitlecolor;
+			font-family: $portfolioTextfont;
+		}
+
+		.tabs-content__item--active {
+			display: block;
+		}
+	}
+	.accordion__picture {
+		position: relative;
+		&:before {
+			content: "";
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: rgba(34, 52, 66, 0.8);
+			visibility: visible;
+			opacity: 1;
+		}
+		// &:hover {
+		// 	&:before {
+		// 		visibility: hidden;
+		// 		opacity: 0;
+		// 	}
+		// }
+	}
+}
+@media (min-width: 320px) {
+	.accordion-item {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.tabs {
+		&-triggers {
+			display: flex;
+			flex-direction: column;
+			&__item {
+				padding-top: 10px;
+			}
+		}
+		&-content {
+			&__block {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				height: 100%;
+				position: relative;
+			}
+			&__title {
+				padding-top: 40px;
+				text-align: center;
+				@include blockFontsfont(15px, $portfolioTextfont, #000, capitalize);
+			}
+			&__icon {
+				display: none;
+			}
+
+			&__text {
+				display: none;
+			}
+		}
+	}
+}
+@media (min-width: 768px) {
+	.tabs {
+		&-triggers {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.tabs {
+		&-triggers {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			max-width: 800px;
+		}
+		&-content {
+			padding-top: 40px;
+
+			&__item {
+				display: none;
+			}
+			&__block {
+				display: flex;
+				flex-direction: row;
+			}
+			&__title {
+				display: block;
+				position: absolute;
+				top: 5%;
+				left: 5%;
+				// transform: translate(-50%, 50%);
+				@include blockFontsfont(15px, $portfolioTextfont, #fff, capitalize);
+			}
+			&__icon {
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, 50%);
+				color: rgb(236, 155, 61);
+				font-size: 45px;
+				opacity: 0;
+				visibility: hidden;
+			}
+
+			&__text {
+				display: block;
+				visibility: visible;
+				opacity: 1;
+				position: absolute;
+				top: 80%;
+				left: 0%;
+				transform: rotate(-90deg);
+				@include blockFontsfont(15px, $portfolioTextfont, #fff, capitalize);
+			}
+		}
+	}
+	.accordion-item {
+		min-height: 551px;
+		overflow: hidden;
+		padding-left: 0px;
+		padding-right: 0px;
+		position: relative;
+	}
+	.accordion__image {
+		width: 352px;
+		transition: width 0.8s linear;
+	}
+	input:checked ~ .accordion-item__trigger .accordion__image {
+		width: 450px;
+	}
+	input:checked ~ .accordion-item__trigger .tabs-content__title {
+		display: none;
+	}
+	.tabs-triggers__item--active {
+		border-bottom: 2px solid #000;
+	}
+}

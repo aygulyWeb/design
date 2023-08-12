@@ -1,0 +1,132 @@
+@import "_variables";
+@import "_fonts";
+@import "_mixins";
+
+.etapy {
+	background-color: $etapyBgcolor;
+	padding-top: 117px;
+	padding-left: 18px;
+	padding-right: 18px;
+
+	&__heading {
+		text-align: center;
+		@include aboutBlockfonts(45px, $uslugiHeadingfont, $uslugiHeadingcolor, none, center);
+	}
+	// &__content {
+
+	// }
+	&__item {
+		padding-top: 48px;
+	}
+	&__title {
+		position: relative;
+		@include blockFontsfont(24px, $etapyTitlefont, $etapyTitlecolor, capitalize);
+		&:before {
+			content: "";
+			position: absolute;
+			top: 150%;
+			left: 0;
+			width: 42px;
+			height: 2px;
+			background-color: $etapyTitleline;
+		}
+	}
+	&__subtitle {
+		padding-top: 43px;
+		line-height: 1.5;
+		@include blockFontsfont(18px, $etapySubfont, $etapySubcolor, none);
+	}
+}
+
+@media (min-width: 320px) {
+	.etapy {
+		&__number {
+			visibility: hidden;
+			opacity: 0;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.etapy {
+		padding-top: 190px;
+		padding-left: 40px;
+		padding-right: 40px;
+		&__heading {
+			text-align-last: left;
+		}
+		&__number {
+			visibility: visible;
+			opacity: 1;
+			flex: 1 0 80px;
+			width: 57px;
+			height: 57px;
+			border-radius: 50%;
+			border: 1px solid #fdf9f1;
+			position: relative;
+
+			span:nth-child(1) {
+				position: absolute;
+				top: 10%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				@include blockFontsfont(12px, $etapyNumfont, $etapyNumcolor, none);
+				z-index: 2;
+			}
+			span:nth-child(2) {
+				position: absolute;
+				top: 10%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 25px;
+				height: 25px;
+				border-radius: 50%;
+				background-color: #fdf5ec;
+			}
+			span:nth-child(3) {
+				position: absolute;
+				top: 10%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 35px;
+				height: 35px;
+				border-radius: 50%;
+				border: 1px solid #fdf5eb;
+			}
+			span:nth-child(4) {
+				position: absolute;
+				top: 10%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 45px;
+				height: 45px;
+				border-radius: 50%;
+				border: 1px solid #fdf2e8;
+			}
+		}
+		&__content {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		&__text {
+			flex: 1 0 244px;
+		}
+		&__item {
+			display: flex;
+			justify-content: space-between;
+			flex-basis: 320px;
+		}
+	}
+}
+@media (min-width: 991px) {
+	.etapy {
+		padding-top: 138px;
+
+		&__heading {
+			text-align-last: left;
+		}
+		&__number {
+			display: block;
+		}
+	}
+}

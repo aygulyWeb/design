@@ -1,0 +1,67 @@
+@import "_variables";
+@import "_fonts";
+@import "_mixins";
+
+.wrap-footer {
+	padding-bottom: 95px;
+	background-color: $footerBgcolor;
+}
+.footer {
+	padding-top: 58px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	&__logo {
+		text-align: center;
+	}
+	&__socials {
+		padding-top: 40px;
+	}
+	&__copr {
+		padding-top: 58px;
+		@include blockFontsfont(20px, $footerTextfontfont, $footerCoprcolor, uppercase);
+	}
+	&__author {
+		padding-top: 15px;
+		@include blockFontsfont(20px, $footerTextfontfont, $footerCoprcolor, uppercase);
+	}
+	&__link {
+		@include blockFontsfont(20px, $burgerFont, $burgerFontcolor, uppercase);
+		&:hover {
+			color: $burgerHovercolor;
+		}
+		i {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.footer {
+		padding-top: 77px;
+		padding-left: 35px;
+		padding-right: 35px;
+		flex-direction: row;
+		flex-flow: wrap;
+		justify-content: space-between;
+		&__item {
+			&:nth-child(2) {
+				order: -1;
+			}
+		}
+		&__copr {
+			padding-top: 0px;
+		}
+		&__author {
+			padding-top: 0px;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.footer__socials {
+		display: block;
+	}
+}
